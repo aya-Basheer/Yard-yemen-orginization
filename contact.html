@@ -1,17 +1,17 @@
 <!DOCTYPE html>
-<html lang="en"  data-theme="light">
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>about us</title>
-  <link rel="stylesheet" href="css/about.css">
-
-   <link rel="stylesheet" href="css/normlize.css">
-    <link rel="stylesheet" href="css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <link rel="stylesheet" href="css/all.min.css">
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+     <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/normlize.css">
+     <link rel="stylesheet" href="css/contact.css">
 </head>
 <body>
-
-<header>
+ <header style="position: sticky;">
   <div class="container">
     <!-- Logo -->
     <a href="#" class="logo">
@@ -31,8 +31,6 @@
         <li><a href="contact.html">Contact</a></li>
       </ul>
 
-      
-
       <!-- Right Actions -->
       <div class="nav-actions">
         <button id="lang-toggle" aria-label="تبديل اللغة">
@@ -49,35 +47,29 @@
   </div>
 </header>
 
- 
-
-  <!-- sereach-->
-  <div id="search-overlay" class="search-overlay hidden">
-    <input type="search" placeholder="search here..">
-    <button id="close-search">✖</button>
-  </div>
-
-  
 <main>
-  <!-- القسم التعريفي -->
-  <section class="about-section section">
-    <div class="about-grid">
+     <section id="contact1" aria-labelledby="form-title">
 
-  
-      <div class="about-text">
-        <h1><span style="color:#008000">WHO WE ARE</span></h1>
-        <p>
-          Yemen Al-Khair Relief & Development Foundation (YARD) is an independent non profit and non-governmental foundation that was established in 2013 to implement projects for Relief and Development.
-        </p>
-                <h1><span style="color:#008000">OUR VISION</span></h1>
-        <p>Superiority in humanitarian response and sustainable development program.</p>
-      </div>
-    <div class="about-image">
-        <img src="image/YARD about.jpg" alt="">
-      </div>
-    </div>
-  </section>
-</main>
+      <form id="contact" autocomplete="on">
+    
+        <label for="name">Name</label>
+        <input type="text" id="name"  />
+
+        <label for="email">Email</label>
+        <input type="text" id="email"/>
+          <label for="phone">Phone</label>
+        <input type="number" id="phone"/>
+
+
+        <button type="submit" id="sub-btn">Send</button>
+      </form>
+    </section>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m12!1m8!1m3!1d15391.524903905967!2d44.1834867!3d15.3286886!3m2!1i1024!2i768!4f13.1!2m1!1syard%20yemen%20org!5e0!3m2!1sar!2s!4v1753351086390!5m2!1sar!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </main>
+
+x
+    
+<!-- start footer -->
 <!-- start footer -->
   
 <footer class="contact-footer section">
@@ -118,7 +110,8 @@
 </footer>
 
 <!--End footer-->
-
+<script src="js/contact.js"></script>
   <script src="js/main.js"></script>
+<!--End footer-->
 </body>
 </html>

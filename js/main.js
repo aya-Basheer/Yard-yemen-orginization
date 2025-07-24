@@ -23,7 +23,7 @@ closeSearch.addEventListener('click', () => {
 
 // زر اللغة
 document.getElementById('lang-toggle').addEventListener('click', () => {
-  alert('سيتم تحويل اللغة إلى الإنجليزية (مثال فقط)');
+  alert('it will be insert arabic lanaguage latar');
   // يمكنك حفظ اللغة في localStorage
 });
 
@@ -32,9 +32,9 @@ document.getElementById('subscribe-btn').addEventListener('click', () => {
   const email = document.getElementById('subscribe-email').value;
   if (email && email.includes('@')) {
     localStorage.setItem('subscribedEmail', email);
-    alert('تم الاشتراك بنجاح!');
+    alert('Subscripation successful');
   } else {
-    alert('يرجى إدخال بريد إلكتروني صالح');
+    alert('please enter valid email');
   }
 });
 
